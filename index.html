@@ -29,6 +29,7 @@
                 name="userphone"
                 id="user-phone"
                 maxlength="9"
+                required
               />
             </li>
             <li>
@@ -49,6 +50,31 @@
               </select>
             </li>
           </ul>
+        </section>
+        <section class="user-reply">
+          <h2>How should we replay?</h2>
+          <ul>
+            <li>
+              <input type="radio" name="reply" id="phone" />
+              <label for="phone">Call me</label>
+            </li>
+            <li>
+              <input type="radio" name="reply" id="email" />
+              <label for="email">Call me</label>
+            </li>
+            <li>
+              <input type="radio" name="reply" id="no-replay" />
+              <label for="no-replay">Don't reply</label>
+            </li>
+            <li>
+              <input type="checkbox" name="terms" id="user-terms" required />
+              <label for="user-terms">Accept Terms</label>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <button type="reset">Clear</button>
+          <button type="submit">Submit</button>
         </section>
       </form>
     </main>
