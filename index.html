@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -32,48 +38,43 @@
                 required
               />
             </li>
-            <li>
-              <label for="user-message">Your Message</label>
-              <textarea
-                name="usermessage"
-                id="user-message"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </li>
-            <li>
-              <label for="user-select">How did you find us?</label>
-              <select name="userselect" id="user-select">
-                <option value="web search">Web Search</option>
-                <option value="word of mouth">Word of Mouth</option>
-                <option value="other">Other</option>
-              </select>
-            </li>
           </ul>
+          <section class="message-area">
+            <label for="user-message">Your Message</label>
+            <textarea name="usermessage" id="user-message" cols=""></textarea>
+          </section>
+          <section>
+            <label for="user-select">How did you find us?</label>
+            <select name="userselect" id="user-select">
+              <option value="web search">Web Search</option>
+              <option value="word of mouth">Word of Mouth</option>
+              <option value="other">Other</option>
+            </select>
+          </section>
         </section>
         <section class="user-reply">
           <h2>How should we replay?</h2>
           <ul>
-            <li>
-              <input type="radio" name="reply" id="phone" />
-              <label for="phone">Call me</label>
+            <li class="form-control-line">
+              <input type="radio" name="reply" id="contact-phone" value="phone"/>
+              <label for="contact-phone">Call me</label>
             </li>
-            <li>
-              <input type="radio" name="reply" id="email" />
-              <label for="email">Call me</label>
+            <li class="form-control-line">
+              <input type="radio" name="reply" id="contact-email" value="email"/>
+              <label for="contact-email">Call me</label>
             </li>
-            <li>
-              <input type="radio" name="reply" id="no-replay" />
-              <label for="no-replay">Don't reply</label>
-            </li>
-            <li>
-              <input type="checkbox" name="terms" id="user-terms" required />
-              <label for="user-terms">Accept Terms</label>
+            <li class="form-control-line">
+              <input type="radio" name="reply" id="contact-no-replay" value="no-replay"/>
+              <label for="contact-no-replay">Don't reply</label>
             </li>
           </ul>
+          <section class="user-terms">
+            <input type="checkbox" name="terms" id="user-terms" required />
+            <label for="user-terms">Accept Terms</label>
+          </section>
         </section>
-        <section>
-          <button type="reset">Clear</button>
+        <section class="buttons-form">
+          <button class="btn-reset" type="reset">Clear</button>
           <button type="submit">Submit</button>
         </section>
       </form>
