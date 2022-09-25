@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>Contact Us</header>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header><h1>Contact Us</h1></header>
     <main>
-        <form action="/" method="GET"></form>
-
+      <form action="/" method="GET">
+        <section class="user-details">
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="user-name">Your Name</label>
+              <input type="text" name="username" id="user-name" required />
+            </li>
+            <li>
+              <label for="user-email">Your E-mail Address</label>
+              <input type="email" name="useremail" id="user-email" required />
+            </li>
+            <li>
+              <label for="user-phone">Your Phone Number</label>
+              <input type="tel" name="userphone" id="user-phone" maxlength="9" />
+            </li>
+          </ul>
+        </section>
+      </form>
     </main>
-</body>
+  </body>
 </html>
